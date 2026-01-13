@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    background: url(./img/bg-img-01.jpg);
+    background-position: center top 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: right;
+    align-items: center;
+    color: white;
+}
+.herosec{
+    display: flex;
+    flex-direction: column;
+    max-width: 25em;
+    gap: 1.5em;
+    text-align: left;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    left: 15em;
+}
+.herosec h2,
+.herosec p,
+.herosec a {
+    margin: 0;
+    padding: 0;
+}
+.herosec h2{
+    font-size: 3em;
+}
+.herop{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    gap: 1em;
+}
+.herosec a{
+    display: flex;
+    border: none;
+    background-color: rgba(218, 96, 96, 0.774);
+    width: 8em;
+    height: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    border-radius: .5em;
+}
+.herosec a:hover{
+    background-color: red;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background:url(./img/bg-img-02.jpg) ;
+    background-attachment: fixed;
+    background-position: center top ;
+    background-size: cover;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 2em;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2em;
+    max-width: 15em;
+    background-color: rgba(255, 255, 255, 0.719);
+    height: 20em;
+    text-align: left;
+    gap: .9em;
+    flex-wrap: wrap;
+}
+.card h2,
+.card p,
+.card a{
+    margin: 0;
+    padding: 0;
+}
+.card h2{
+    display: flex;
+    font-size: 2em;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    padding-top: .9em;
+}
+.card p{
+
+    font-size: 1em;
+}
+.card a{
+    display: flex;
+    border: none;
+    width: 10em;
+    height: 2em;
+    text-decoration: none;
+    background-color: rgba(218, 96, 96, 0.774);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    border-radius: .2em;
+}
+.card a:hover{
+    background-color: red;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background: url(./img/bg-img-03.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.wrap{
+    position: relative;
+    left: 20em;
+    flex-wrap: wrap;
+}
+.wrapp{
+    display: flex;
+    flex-direction: column;
+    max-width: 26em;
+    background-color:  rgba(255, 255, 255, 0.678);
+    padding-inline: 1em;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    
+
+}
+.wrapper h2{
+    display: flex;
+    max-width: 12em;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.678);
+    flex-wrap: wrap;
+} 
+.wrapper p{
+    display: flex;
+    max-width: 20em;
+    font-size: 1.5em;
+    height: 10em;
+} 
+.wrapper a{
+    display: flex;
+    border: none;
+    width: 10em;
+    height: 2em;
+    text-decoration: none;
+    background-color: rgba(218, 96, 96, 0.774);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    border-radius: .2em;
+}
+.wrap a{
+    margin: 1em;
+    position: relative;
+    left: 7.8em;
+}
+@media (max-width: 768px) {
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .herosec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: .5em;
+        top: 15em;
+        max-width: 25em;
+        text-align: left;
+        padding-inline: 2em;
+    }
+    .herosec h2{
+    font-size: 3em;
+    }
+    .herop{
+        font-size: 1.3em;
+        font-weight: 10px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 1em;
+        flex-wrap: wrap;
+    }
+    .wrap h2{
+        flex-wrap: wrap;
+        position: relative;
+        left: .5em;
+    }
+    .wrap a{
+        position: relative;
+        left: 1em;
+    }
+}
