@@ -223,7 +223,9 @@ body{
 }
 .cardimg{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 2em;
     margin-top: 4em;
@@ -285,5 +287,10 @@ body{
     .contain {
         padding-inline: 2em;
     }
-
+    .cardimg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
 }
